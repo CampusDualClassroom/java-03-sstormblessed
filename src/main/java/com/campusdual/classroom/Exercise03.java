@@ -22,20 +22,13 @@ public class Exercise03 {
         if (user.equals("Sebas") && pass.equals("sebas01")) {
             System.out.println(greetings(user));
         } else {
-            System.out.println(error(user));
+            System.out.println(error("Sebas"));
         }
     }
 
 
     public static void main(String[] args) {
-        String user, pass;
-
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Escribe tu nombre: ");
-        user = sc.nextLine();
-        System.out.println("Escribe tu contraseña: ");
-        pass = sc.nextLine();
-
-        checkUser(user, pass);
+        checkUser("Sebas", "sebas01");
+        checkUser("tal", "cual");
     }
 }
